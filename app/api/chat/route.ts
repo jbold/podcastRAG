@@ -22,6 +22,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // The llm selector + model version
     const llm = new OpenAI({
       model: "gpt-4-1106-preview",
     });
